@@ -74,10 +74,12 @@
         {
             if (age >= 18)
             {
+                Console.WriteLine("Congratulations! You are old enough to vote!");
                 return true;
             }
             else
             {
+                Console.WriteLine("Sorry, you are not old enough to vote. You must be 18 years old or older.");
                 return false;
             }
         }
@@ -89,10 +91,12 @@
         {
             if (number <= 10 && number >= -10)
             {
+                Console.WriteLine("Your number falls in the correct range");
                 return true;
             }
             else
             {
+                Console.WriteLine("Your number is out of range");
                 return false;
             }
         }
@@ -112,17 +116,19 @@
         // Use various test cases to ensure they work as expected.        
         static void Main(string[] args)
         {
-            PrintNumbers(); //call lukewarm 1
-            PrintEveryThirdNumber(); //call lukewarm 2
-            AreNumbersEqual(2, 3); //call lukewarm 3
-            IsEven(2); //call lukewarm 4
-            IsPositive(3); //call lukewarm 5
-            CanVote(19); //call lukewarm 6
+            //PrintNumbers(); //call lukewarm 1
+            //PrintEveryThirdNumber(); //call lukewarm 2
+            //AreNumbersEqual(2, 3); //call lukewarm 3
+            //IsEven(2); //call lukewarm 4
+            //IsPositive(3); //call lukewarm 5
             
-            Console.WriteLine("Please enter a number:");    //call of heatin up 1
-            IsInRange(int.Parse(Console.ReadLine()));
+            //Console.WriteLine("How old are you?");
+            //CanVote(int.Parse(Console.ReadLine())); //call lukewarm 6
+            
+            //Console.WriteLine("Please enter a number:");    //call of heatin up 1
+            //IsInRange(int.Parse(Console.ReadLine()));
 
-            DisplayMultiplicationTable(17);          //call for heatin up 2
+            //DisplayMultiplicationTable(17);          //call for heatin up 2
 
         }   
     }
